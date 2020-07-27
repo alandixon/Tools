@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DelayByFileCount": {
+      "commandName": "Project",
+      "commandLineArgs": "-d X:\\Temp\\DeleteMe -f -2"
+    }
+  }
+}

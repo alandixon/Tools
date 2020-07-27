@@ -1,0 +1,9 @@
+﻿<Project>
+  <PropertyGroup>
+    <Version>1.0.0.1</Version>
+    <Authors>Alan Dixon</Authors>
+    <Product>DelayByFileCount</Product>
+    <Description>A Windows .Net Core console app extending TIMEOUT</Description>
+    <Copyright>Copyright © Alan Dixon 2020</Copyright>
+  </PropertyGroup>
+</Project>
