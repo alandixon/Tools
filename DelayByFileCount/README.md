@@ -15,11 +15,11 @@ A small command-line app that pauses until the filecount in a given directory ma
 ## Usage <a name="Usage"></a>
 
 ### Parameters
-`-d, --Directory    Required. Directory to Watch`
+`-d, --Directory (Required) Directory to Watch`
 
-`-f, --FileCount    Required.`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;`n or +n : Pause until there are n or MORE files.`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;`-n : Pause until there are n or LESS files`
+`-f, --FileCount (Required)`
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n or +n : Pause until there are n or MORE files.`
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-n : Pause until there are n or LESS files`
 
 `--help             Display this help screen.`
 
