@@ -11,6 +11,9 @@ A Windows .Net Core console app extending the [DOS timeout command](https://docs
 ## Overview <a name="Overview"></a>
 
 A small command-line app that pauses until the filecount in a given directory matches a specified value.
+<br>I use it for two related things:
+* Ensuring that I don't start too many async batch processes simultaneously. Each batch process creates a marker file at startup and deletes it at teardown. I monitor the dierctory of marker files and only allow a new process to start when there are few enough files present.
+* Ensuring I don't finish a batch process until all sub-processes are complete. Again, with marker files, I wait until there are no files present before allowing the batch to close.
 
 ## Usage <a name="Usage"></a>
 
