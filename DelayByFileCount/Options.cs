@@ -11,7 +11,7 @@ namespace DelayByFileCount
         [Option('d', "Directory", Required = true, HelpText = "Directory to Watch")]
         public string DirectoryToWatch { get; set; }
 
-        [Option('f', "FileCount", Required = true, HelpText = "\nn or +n : Pause until there are n or MORE files.\n-n : Pause until there are n or LESS files")]
+        [Option('f', "FileCount", Required = true, HelpText = "\nn or +n : Pause until there are n or MORE files.\n-n : Pause until there are n or LESS files.\n0 : Terminate immediately")]
         public string FileCountString { get; set; }
 
         private int? fileCount;
@@ -38,6 +38,7 @@ namespace DelayByFileCount
             {
                 yield return new Example(@"Example 1: Pause until there are 4 or more files in c:\temp", new Options { DirectoryToWatch = @"c:\temp", FileCountString = "4" });
                 yield return new Example(@"Example 2: Pause until there are 3 or less files in c:\temp", new Options { DirectoryToWatch = @"c:\temp", FileCountString = "-3" });
+                yield return new Example(@"Example 3: Terminate immediately", new Options { DirectoryToWatch = @"c:\temp", FileCountString = "0" });
             }
         }
 

@@ -23,6 +23,7 @@ A small command-line app that pauses until the filecount in a given directory ma
 `-f, --FileCount (Required)`
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n or +n : Pause until there are n or MORE files.`
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-n : Pause until there are n or LESS files`
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n = 0: Terminate immediately`
 
 `--help             Display this help screen.`
 
