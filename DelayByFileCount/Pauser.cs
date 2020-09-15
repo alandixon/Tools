@@ -61,8 +61,8 @@ namespace DelayByFileCount
             }
             else if (options.FileCount.Value < 0)
             {
-                // Terminate if we have found (-n) or less
-                conditionMet = foundFileCount <= (-options.FileCount.Value);
+                // Terminate if we have found less than (-n)
+                conditionMet = foundFileCount < (-options.FileCount.Value);
             }
             else
             {
