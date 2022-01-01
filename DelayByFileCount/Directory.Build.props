@@ -1,6 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <Version>1.0.0.2</Version>
+    <Version>1.0.1.0</Version>
     <Authors>Alan Dixon</Authors>
     <Product>DelayByFileCount</Product>
     <Description>A Windows .Net Core console app extending TIMEOUT</Description>

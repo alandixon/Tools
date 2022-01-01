@@ -23,7 +23,7 @@ A small command-line app that pauses until the filecount in a given directory ma
 `-f, --FileCount (Required)`
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n or +n : Pause until there are n or MORE files.`
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`-n : Pause until there are n or LESS files`
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n = 0: Terminate immediately`
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`n = 0: Pause until there are no files`
 
 `--help             Display this help screen.`
 
@@ -38,6 +38,11 @@ __Pause until there are 4 or more files in c:\temp:__
 __Pause until there are 3 or less files in c:\temp:__
 <br>
 `DelayByFileCount --Directory c:\temp --FileCount -3`
+
+### Example 3
+__Pause until there are no files in c:\temp:__
+<br>
+`DelayByFileCount --Directory c:\temp --FileCount 0`
 
 ## Credits <a name="Credits"></a>
 

@@ -64,9 +64,9 @@ namespace DelayByFileCount
                 // Terminate if we have found less than (-n)
                 conditionMet = foundFileCount < (-options.FileCount.Value);
             }
-            else
+            else //  options.FileCount.Value == 0; terminate if zero files found
             {
-                conditionMet = true;
+                conditionMet = (foundFileCount == 0);
             }
 
             return conditionMet;
